@@ -15,7 +15,7 @@ import {
   ChevronLeft,
   ChevronUp,
   ChevronDown,
-  CircleSquare, // Replaced SquareRoot with CircleSquare
+  Square, // Replaced CircleSquare with Square
 } from 'lucide-react';
 
 const Calculator = () => {
@@ -433,7 +433,7 @@ const Calculator = () => {
                 className="bg-calculator-function text-white border-none hover:bg-calculator-function/80"
                 onClick={() => handleScientificFunction('sqrt')}
               >
-                <CircleSquare className="h-5 w-5" />
+                <Square className="h-5 w-5" />
               </Button>
               <Button 
                 variant="outline" 
