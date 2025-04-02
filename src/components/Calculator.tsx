@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -10,13 +9,13 @@ import {
   X,
   Divide,
   Equal,
-  SquareRoot,
   Percent,
   ArrowLeft,
   Trash2,
   ChevronLeft,
   ChevronUp,
   ChevronDown,
+  CircleSquare, // Replaced SquareRoot with CircleSquare
 } from 'lucide-react';
 
 const Calculator = () => {
@@ -434,7 +433,7 @@ const Calculator = () => {
                 className="bg-calculator-function text-white border-none hover:bg-calculator-function/80"
                 onClick={() => handleScientificFunction('sqrt')}
               >
-                <SquareRoot className="h-5 w-5" />
+                <CircleSquare className="h-5 w-5" />
               </Button>
               <Button 
                 variant="outline" 
